@@ -32,6 +32,12 @@
   amp-accordion#hidden-header section[expanded] h4 {
     border: none;
   }
+  header{
+    overflow: hidden;
+  }
+  h1{
+    float: left;
+  }
 </style>
 <amp-analytics type="googleanalytics" id="analytics1">
 <script type="application/json">
@@ -50,28 +56,30 @@
 </amp-analytics>
 </head>
 <body>
-  <h1>Test Page02</h1>
-  <button on="tap:sidebar.open"> = </button>
-  <amp-sidebar id="sidebar" layout="nodisplay">
-    <ul>
-      <li on="tap:sidebar.toggle">Toggle</li>
-      <li on="tap:sidebar.close">Close</li>
-    </ul>
-  </amp-sidebar>
-  <amp-sidebar id='sidebar1' layout='nodisplay'>
-  <ul>
-    <li> Nav item 1</li>
-    <li> Nav item 2</li>
-    <li> Nav item 3</li>
-    <li> Nav item 4</li>
-    <li> Nav item 5</li>
-    <li> Nav item 6</li>
-    <li> Nav item 7</li>
-    <li> Nav item 8</li>
-    <li> Nav item 9</li>
-    <li on="tap:sidebar1.close"> Close</li>
-  </ul>
-</amp-sidebar>
+  <header>
+    <h1>Test Page02</h1>
+    <button on="tap:sidebar.open"> = </button>
+    <amp-sidebar id="sidebar" layout="nodisplay">
+      <ul>
+        <li on="tap:sidebar.toggle">Toggle</li>
+        <li on="tap:sidebar.close">Close</li>
+      </ul>
+    </amp-sidebar>
+    <amp-sidebar id='sidebar1' layout='nodisplay'>
+      <ul>
+        <li> Nav item 1</li>
+        <li> Nav item 2</li>
+        <li> Nav item 3</li>
+        <li> Nav item 4</li>
+        <li> Nav item 5</li>
+        <li> Nav item 6</li>
+        <li> Nav item 7</li>
+        <li> Nav item 8</li>
+        <li> Nav item 9</li>
+        <li on="tap:sidebar1.close"> Close</li>
+      </ul>
+    </amp-sidebar>
+  </header>
   <amp-carousel width="400"
   height="300"
   layout="responsive"
